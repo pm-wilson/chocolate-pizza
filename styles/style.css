@@ -1,6 +1,5 @@
 * {
     display: inline-block;
-    border: solid 1px green;
     margin: auto;
     max-width: 901px;
 }
@@ -10,6 +9,7 @@ head {
 }
 
 header {
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -36,10 +36,16 @@ header {
 
 .logo-text {
     display: block;
+    font-size: 10px;
+    font-variant: small-caps;
+    color: gray;
 }
 
 .delicious {
     display: block;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 25px;
 }
 
 .icon {
@@ -95,6 +101,8 @@ header {
 
 .title-name {
     display: block;
+    margin-top: 40px;
+    font-size: 40px;
 }
 
 .posted-print {
@@ -135,7 +143,7 @@ header {
     height: 603px;
 }
 
-p {
+.recipe-paragraph {
     margin-top: 20px;
     font-size: 18px;
     text-indent: 40px;
@@ -173,4 +181,82 @@ p {
     background-image: url("../images/van-pic.png");
     width: 71px;
     height: 68px;
+    margin-right: 5px;
+    margin-top: 0px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+.author-info-area {
+    display: flex;
+    margin: 0;
+    margin-left: 5px;
+}
+
+.author-name {
+    display: block;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.author-text {
+    display: block;
+    font-size: 18px;
+}
+
+.recipe-button {
+    margin: 0;
+    background-color: rgb(188, 112, 88);
+    color: white;
+    width: 160px;
+    height: 40px;
+}
+
+.spacer {
+    width: 45%;
+    border-bottom: solid 2px lightgray;
+}
+
+.small-logo-icon {
+    background-image: url("../images/small-logo.png");
+    width: 31px;
+    height: 33px;
+}
+
+.spacer-div {
+    display: flex;
+    justify-content: space-between;
+    width: 901px;
+}
+
+.footer-bottom {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.small-logo-text-upper {
+    color: gray;
+    font-size: 14px;
+}
+
+.small-logo-text-lower {
+    display: block;
+    color: gray;
+    font-size: 14px;
+}
+
+.floater {
+    position: relative;
+    top: -5px;
 }
