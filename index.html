@@ -2,57 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/home.css">
-    <title>Document</title>
 </head>
 
 <body>
     <header>
-        <div class="logo-icon"></div>
-        <div class="logo-title">Delicious</div>
-        <div class="logo-description">THE BEST FOOD BLOG ON THE WEB</div>
-        <div class="partner-logos"></div>
-        <div class="contact-logos"></div>
+        <section class="logo-container-1">
+            <div class="logo-icon"></div>
+            <div class="logo-title">
+                <p class="delicious">Delicious</p>
+                <p class="logo-text">THE BEST FOOD BLOG ON THE WEB.</p>
+            </div>
+        </section>
+        <section class="logo-container-2">
+            <div class="partner-logos">
+                <a href="facebook.com" class="facebook icon"></a>
+                <a href="twitter.com" class="twitter icon"></a>
+                <a href="google.com/" class="google icon"></a>
+                <a href="instagram.com" class="instagram icon"></a>
+                <a href="flickr.com" class="flickr icon"></a>
+                <a href="pintrist.com" class="pintrist icon"></a>
+            </div>
+            <div class="contact-logos">
+                <a href="index.html" class="rss icon"></a>
+                <a href="mailto:chocolatepizza@delicious.comm" class="mailto icon"></a>
+            </div>
+        </section>
     </header>
 
     <div class="hr-box"></div>
     <main>
         <section class="title-section">
             <h1 class="title-name">Chocolate Pizza</h1>
-            <div class="post-date">POSTED ON 15 DEC 2013 / DESSERTS</div>
-            <span class="print-area">
-                <div class="print-icon"></div>
-                <div class="print-text">PRINT</div>
+            <section class="posted-print">
+                <div class="post-date">POSTED ON 15 DEC 2013 / DESSERTS</div>
+                <span class="print-area">
+                    <div class="print-icon"></div>
+                    <div class="print-text">PRINT</div>
+            </section>
             </span>
         </section>
         <section class="title-picture"></section>
         <section class="recipe-instructions">
-            <p class="recipe-paragraph"></p>
-            <p class="recipe-paragraph"></p>
-            <p class="recipe-paragraph"></p>
+            <p class="recipe-paragraph">For the fig-swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a chunky-jammy mixture. Add salt with one or two stirs, set aside and let cool completely.
+            </p>
+            <p class="recipe-paragraph">Ice cream: In a small pot over medium heat, combine milk, and granulated sugar until sugar is completely dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set mixture in the fridge and wait until the fig mixture is cooled.
+            </p>
+            <p class="recipe-paragraph">Using and ice cream machine, pour liquids into the frozen basin and process according to manufacturer instructions, i.e., let spin and thicken for 20 minutes before adding mascarpne, fig jam mixture, and the nust. Continue to process for +/- 10 minutes. Pour semi-frozen mixture into a pyrex dish or glass tupperware. Freeze for at least two hours before serving.
+            </p>
         </section>
         <section class="recipe-picture-area">
             <ul class="recipe-list left">
-                <li>1 1/2 cups milk</li>
-                <li>1/2 cup mascarpone</li>
-                <li>1/2 tsp pink salt</li>
-                <li>1 lb Black Mission Figs</li>
-                <li>1/2 cup brown sugar</li>
-                <li>2-4 tbsp water</li>
+            
+                <label class="checkbox-container">
+                    <input type="checkbox"> 1 1/2 cups milk
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox"> 1/2 cup mascarpone
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox"> 1/2 tsp pink salt
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox"> 1 lb Black Mission Figs
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox"> 1/2 cup brown sugar
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox"> 2-4 tbsp water
+                </label>
             </ul>
             <ul class="recipe-list right">
-                <li>1 1/2 cups heavy cream</li>
-                <li class="item-checked">1/3 granulated sugar</li>
-                <li class="item-checked">2 egg yolks</li>
-                <li>1 lemon, juiced</li>
-                <li>2 tbsp butter</li>
-                <li>i cup honey roasted pecans, roughly chopped</li>
+                <label class="checkbox-container">
+                    <input type="checkbox"> 1 1/2 cups heavy cream
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" checked> <span class="checked"> 1/3 granulated sugar</span>
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox" checked> <span class="checked"> 2 egg yolks</span>
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox"> 1 lemon, juiced
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox"> 2 tbsp butter
+                </label>
+                <label class="checkbox-container">
+                    <input type="checkbox"> 1 cup honey roasted pecans, roughly  <br>
+                    <span class="chopped">chopped</span>
+                </label>
             </ul>
         </section>
     </main>
@@ -62,15 +102,19 @@
         <div class="footer-top">
             <div class="author-info-area">
                 <div class="author-photo"></div>
-                <div class="author-name">Vanessa Stevenson</div>
-                <div class="author-information">Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</div>
+                <section class="author-text">
+                    <div class="author-name">Vanessa Stevenson</div>
+                    <div class="author-information">Food enthusiast, photography fan. Add a pinch of raw foodism and that's <br> pretty much who I am.</div>
+                </section>
             </div>
-            <button class="share-recipe">SHARE RECIPE</button>
+            <button class="recipe-button">SHARE RECIPE</button>
         </div>
-        <div class="footer-bottom">
+        <div class="spacer-div">
             <div class="spacer left"></div>
             <div class="small-logo-icon"></div>
             <div class="spacer right"></div>
+        </div>
+        <div class="footer-bottom">
             <div class="small-logo-text-upper">Delicious &copy; 2013 <span class="floater">.</span> All Rights Reserved.</div>
             <div class="small-logo-text-lower">Proudly published with Ghost.</div>
         </div>
